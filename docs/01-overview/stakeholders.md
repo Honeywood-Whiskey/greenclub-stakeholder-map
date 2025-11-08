@@ -1,4 +1,4 @@
-# 🫱‍🫲 Stakeholders
+# Stakeholders
 
 The **GreenClub Stakeholder Map** connects the people and organizations driving sustainability efforts at Cornell and in the wider Ithaca community.  
 This document outlines who contributes to, benefits from, and maintains the project.
