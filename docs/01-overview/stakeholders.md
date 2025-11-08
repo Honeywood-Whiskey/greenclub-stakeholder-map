@@ -22,8 +22,9 @@ This document outlines who contributes to, benefits from, and maintains the proj
 |--------|--------------|------|
 | **Local Restaurants & Cafés** | Partners donating food or participating in composting initiatives. | Data sources; represented as pins on the stakeholder map. |
 | **Composting Sites** | Local and campus-based compost facilities. | Provide data for waste diversion and processing capacity. |
-| **Nonprofits & Food Redistribution Orgs** | Groups like Loaves & Fishes, Friendship Donations Network. | Collaborators in sustainability and hunger mitigation programs. |
+| **Food Redistribution Orgs** | Groups like Loaves & Fishes, Friendship Donations Network. | Collaborators in sustainability and hunger mitigation programs. |
 | **Municipal & Community Partners** | City of Ithaca, Tompkins County Solid Waste, etc. | Infrastructure and policy-level collaboration. |
+| **Nonprofits** | Cornell Food Pantry, Rethink Food, etc. | Infrastructure and policy-level collaboration. |
 
 ---
 
