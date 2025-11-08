@@ -36,6 +36,8 @@ Airtable → Python Pipeline → GeoJSON → Map Visualization → Public Intera
 ---
 
 ## 🗂️ Repository Structure
+
+```
 ├── data/ # Generated or sample data
 │ ├── greenclub_map.geojson
 │ └── sample_airtable.json
@@ -64,7 +66,7 @@ Airtable → Python Pipeline → GeoJSON → Map Visualization → Public Intera
 ├── CONTRIBUTING.md
 ├── LICENSE
 └── README.md
-
+```
 ---
 
 
