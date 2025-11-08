@@ -2,15 +2,16 @@
 
 *Last edited: 2025-11-08*
 
-Thank you for your interest in The GreenClub StakeHolder Map!
+Thank you for your interest in The GreenClub StakeHolder Map! We hope that this tool will be used by future memebers of Cornell GreenClub!
 
 ---
 
 ## Contributors
 
-### Team
+### Teams and History
 
-* **XXX XXX** ([@XXX](https://github.com/XXXX))
+FA25
+* **XXX XXX** ([@XXX](https://github.com/XXXX)) 
 * **XXX XXX** ([@XXX](https://github.com/XXXX))
 * **XXX XXX** ([@XXX](https://github.com/XXXX))
 * **XXX XXX** ([@XXX](https://github.com/XXXX))
