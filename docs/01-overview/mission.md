@@ -23,6 +23,7 @@ Our goal is to **create a living, transparent ecosystem** that ensures every out
 
 ## 🪴 Why This Matters
 
-> “Community sustainability depends on continuity — this project builds that foundation.”
+> “Community sustainability depends on continuity" — this project builds that foundation.
 
 By maintaining a shared data layer between members and map users, GreenClub ensures that each semester’s efforts build upon the last, forming an enduring knowledge base that reflects Ithaca’s evolving sustainability ecosystem.
+
