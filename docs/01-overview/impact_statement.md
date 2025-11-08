@@ -15,6 +15,10 @@ This document defines our near-term outcomes and long-term impact vision.
 | **4. Strengthen Local Partnerships** | Enable faster outreach to Ithaca sustainability organizations. | Increased number of collaborative events or projects. |
 | **5. Empower Student Ownership** | Create a technical and documentation base that future teams can easily extend. | Onboard new contributors with minimal setup time (< 30 mins). |
 
+| **6. Create Future Systems** | Develop a lasting system which is easy to use and can be devleoped by future GreenClub students | Widespread adoption and activity within the Airtable database. |
+
+| **7. Build In Flexbility** | Allow modular additions, additional pages, and other concepts to create a future proof design | Proliferation of organized databases with documented purpose and goals |
+
 ---
 
 ## 🌱 Secondary Benefits
@@ -40,7 +44,7 @@ This document defines our near-term outcomes and long-term impact vision.
 | Number of stakeholders onboarded | 50+ verified entries | Airtable record count |
 | Data completeness | ≥ 90% fields filled | Airtable schema audit |
 | Engagement | At least 2 active student teams using the tool | GitHub activity / Airtable logs |
-| Update frequency | Monthly or per semester | Git commit or Airtable API timestamps |
+| Update frequency | Monthly, per semester, or on-demand | Git commit or Airtable API timestamps |
 
 ---
 
@@ -49,7 +53,7 @@ This document defines our near-term outcomes and long-term impact vision.
 > “A self-sustaining network map that outlives any single semester.”
 
 In the long run, the project aims to:
-- Serve as the **central sustainability data layer** for Cornell student organizations.  
+- Serve as the **central stakeholder data layer** for Cornell GreenClub.  
 - Provide a foundation for **data-driven outreach** and collaboration metrics.  
 - Inspire similar initiatives at other universities seeking transparency in student-led sustainability projects.  
 
@@ -68,6 +72,6 @@ In the long run, the project aims to:
 
 ## 🧭 Closing Thought
 
-> The GreenClub Stakeholder Map is not just software — it’s a *continuity system* for student-driven sustainability work.
+> The GreenClub Stakeholder Map is designed to be a system interface that tackles traditional challenges in stakeholder outreach and hopefully enables students to accomplish more.
 
-By connecting data, people, and place, it ensures Cornell’s sustainability ecosystem continues to grow — not restart — each semester.
+By connecting data, people, and place, it ensures Cornell’s sustainability ecosystem continues to grow, not restart, each semester.
