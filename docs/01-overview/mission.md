@@ -1,22 +1,28 @@
-# 🌱 Project Overview
+# 🌿 Mission
 
-**GreenClub Stakeholder Map** is a student-led open-data project designed to centralize sustainability partnerships at Cornell.
+The **GreenClub Stakeholder Map** is a community-driven initiative by Cornell GreenClub to centralize, visualize, and strengthen the network of sustainability partners across Cornell and the Ithaca area.
 
-### 🎯 Objectives
-1. Build a shared knowledge base of sustainability partners.
-2. Visualize community connections through an interactive map.
-3. Maintain continuity across student leadership transitions.
-4. Provide insight into local collaboration and food-waste reduction.
+---
 
-### 🧩 Components
-| Layer | Description |
-|--------|-------------|
-| **Airtable CRM** | Manages structured data on organizations, contact info, and categories. |
-| **Python Pipeline** | Syncs and transforms data into GeoJSON for visualization. |
-| **Mapbox Frontend** | Displays the data as an interactive map, filterable by stakeholder type. |
+## 🎯 Our Purpose
 
-### 🫱‍🫲 Stakeholders
-- Cornell GreenClub Members  
-- Cornell Dining Sustainability  
-- Local restaurants and composting partners  
-- Ithaca-area food waste organizations  
+Each semester, GreenClub members engage with dozens of external partners — restaurants, composting sites, nonprofits, and student organizations — but institutional memory is easily lost as members graduate.  
+Our goal is to **create a living, transparent ecosystem** that ensures every outreach effort, partnership, and contact is preserved for future sustainability projects.
+
+---
+
+## 🧭 Guiding Principles
+
+1. **Accessibility** — Information should be easy to find, maintain, and update.  
+2. **Transparency** — Data shared within the Cornell community remains open and verifiable.  
+3. **Collaboration** — The platform encourages cross-project synergy among student teams and local partners.  
+4. **Continuity** — The system persists across semesters and leadership changes.  
+5. **Impact over Scale** — Focus on meaningful connections, not just quantity of data.
+
+---
+
+## 🪴 Why This Matters
+
+> “Community sustainability depends on continuity — this project builds that foundation.”
+
+By maintaining a shared data layer between members and map users, GreenClub ensures that each semester’s efforts build upon the last, forming an enduring knowledge base that reflects Ithaca’s evolving sustainability ecosystem.
