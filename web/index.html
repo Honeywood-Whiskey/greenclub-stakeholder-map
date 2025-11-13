@@ -1,1 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GreenClub Stakeholder Map</title>
+
+  <!-- Mapbox GL JS -->
+  <link
+    href="https://api.mapbox.com/mapbox-gl-js/v3.2.0/mapbox-gl.css"
+    rel="stylesheet"
+  />
+  <script
+    src="https://api.mapbox.com/mapbox-gl-js/v3.2.0/mapbox-gl.js">
+  </script>
+
+  <!-- Page styles -->
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      font-family: sans-serif;
+    }
+
+    #map {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    /* Optional: subtle Mapbox attribution style tweaks */
+    .mapboxgl-ctrl-attrib {
+      background: rgba(255, 255, 255, 0.8);
+      font-size: 12px;
+      padding: 4px 8px;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Map container -->
+  <div id="map"></div>
+
+  <!-- Your JS logic -->
+  <script src="map.js"></script>
+</body>
+</html>
 
