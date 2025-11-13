@@ -1,22 +1,17 @@
 // === CONFIGURATION ===
-mapboxgl.accessToken = '';
-const AIRTABLE_BASE_ID = '';
-const AIRTABLE_TABLE_ID = '';
-const AIRTABLE_TOKEN = '';
+mapboxgl.accessToken = 'pk.eyJ1IjoiY29ybmVsbC1ncmVlbmNsdWItbWFwIiwiYSI6ImNtaHNxOXFxYzFubzEybHExeWF0Ymw4bzYifQ.j1WXA1sRXlFdN7XH7_8lTg';
 
 // === INITIALIZE MAP ===
 const map = new mapboxgl.Map({
   container: 'map',
-  style: 'mapbox://styles/mapbox/light-v11', 
+  style: 'mapbox://styles/mapbox/light-v11',
   center: [-76.5, 42.44],
   zoom: 11
 });
 
-// === FETCH STAKEHOLDER DATA FROM AIRTABLE ===
+// === FETCH DATA SAFELY THROUGH BACKEND ===
 async function loadAirtableData() {
-  const response = await fetch(`https://api.airtable.com/v0/${AIRTABLE_BASE_ID}/${AIRTABLE_TABLE_ID}`, {
-    headers: { Authorization: `Bearer ${AIRTABLE_TOKEN}` }
-  });
+  const response = await fetch('/api/get_data');
   const json = await response.json();
   return json.records;
 }
@@ -30,8 +25,6 @@ async function plotStakeholders() {
     if (!f.Latitude || !f.Longitude) continue;
 
     const coords = [parseFloat(f.Longitude), parseFloat(f.Latitude)];
-
-    // Color by stakeholder type
     const colorMap = {
       Restaurant: "#ff7b00",
       "Food Pantry": "#009688",
@@ -41,7 +34,6 @@ async function plotStakeholders() {
       "Grocery Store": "#4CAF50"
     };
 
-    // Handle arrays or single text fields
     const type = Array.isArray(f["Stakeholder Type"])
       ? f["Stakeholder Type"][0]
       : f["Stakeholder Type"];
@@ -50,7 +42,6 @@ async function plotStakeholders() {
       : f["Subteam Tag"];
     const markerColor = colorMap[type] || "#555";
 
-    // Create and add marker
     new mapboxgl.Marker({ color: markerColor })
       .setLngLat(coords)
       .setPopup(
@@ -59,7 +50,7 @@ async function plotStakeholders() {
           <i>${type}</i><br>
           ${f.Address}<br>
           Subteam: ${subteam || "—"}<br>
-          <a href="${f.Wesbite}" target="_blank">Website</a>
+          <a href="${f.Website}" target="_blank">Website</a>
         `)
       )
       .addTo(map);
