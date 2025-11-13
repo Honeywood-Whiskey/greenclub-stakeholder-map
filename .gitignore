@@ -201,6 +201,11 @@ cython_debug/
 .cursorignore
 .cursorindexingignore
 
+#env files
+.env
+.env.local
+
+
 # Marimo
 marimo/_static/
 marimo/_lsp/
