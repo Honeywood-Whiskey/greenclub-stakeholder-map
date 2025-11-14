@@ -211,3 +211,19 @@ marimo/_static/
 marimo/_lsp/
 __marimo__/
 .vercel/
+.vercel
+
+# Node / JS
+node_modules/
+npm-debug.log
+yarn-error.log
+package-lock.json
+
+# Build
+dist/
+out/
+.next/
+
+# OS files
+.DS_Store
+Thumbs.db
