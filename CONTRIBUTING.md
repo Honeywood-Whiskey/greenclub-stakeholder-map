@@ -11,11 +11,11 @@ Thank you for your interest in The GreenClub StakeHolder Map! We hope that this 
 ### Teams and History
 
 FA25
-* **XXX XXX** ([@XXX](https://github.com/XXXX)) 
-* **XXX XXX** ([@XXX](https://github.com/XXXX))
-* **XXX XXX** ([@XXX](https://github.com/XXXX))
-* **XXX XXX** ([@XXX](https://github.com/XXXX))
-* **XXX XXX** ([@XXX](https://github.com/XXXX))
+* **Arnav Dangre** ([@XXX](https://github.com/XXXX)) 
+* **Janet Luo** ([@XXX](https://github.com/XXXX))
+* **Yilin Wang** ([@XXX](https://github.com/XXXX))
+* **Suri Zhou** ([@XXX](https://github.com/XXXX))
+* **Justin Li** ([@XXX](https://github.com/XXXX))
 
 ---
 
