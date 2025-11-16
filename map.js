@@ -6,12 +6,12 @@ mapboxgl.accessToken =
 
 const map = new mapboxgl.Map({
   container: "map",
-  style: "mapbox://styles/mapbox/streets-v12", // More colorful basemap
+  style: "mapbox://styles/mapbox/streets-v12",
   center: [-76.5, 42.44],
   zoom: 11,
 });
 
-// Storage for markers (so filtering can hide/show them)
+// Storage
 let allMarkers = [];
 let allRecords = [];
 
@@ -38,13 +38,33 @@ function recordMatchesSearch(rec, searchTerm) {
   const term = searchTerm.toLowerCase();
   const fields = rec.fields;
 
-  // Combine ALL fields into a single searchable string
   const combined = Object.values(fields)
-    .flat() // unpack arrays like ["Farm"]
+    .flat()
     .join(" ")
     .toLowerCase();
 
   return combined.includes(term);
+}
+
+// =========================
+//  MULTI-SELECT HELPERS
+// =========================
+
+// Returns array of selected values from a <select multiple>
+function getSelectedValues(selectEl) {
+  return Array.from(selectEl.selectedOptions).map((opt) => opt.value);
+}
+
+// OR check for single-value categories
+function matchesOr(singleValue, selectedArray) {
+  if (!selectedArray || selectedArray.length === 0) return true;
+  return selectedArray.includes(singleValue);
+}
+
+// OR check for array fields (e.g., ["Echo", "Asphalt"])
+function matchesAny(arrayField, selectedArray) {
+  if (!selectedArray || selectedArray.length === 0) return true;
+  return arrayField.some((v) => selectedArray.includes(v));
 }
 
 // =========================
@@ -64,7 +84,6 @@ const colorMap = {
   "Liquor Store": "#6D4C41",
 };
 
-// Build legend
 function buildLegend() {
   const legend = document.getElementById("legend");
   legend.innerHTML = "";
@@ -115,10 +134,16 @@ function createMarker(rec) {
 // =========================
 function applyFilters() {
   const search = document.getElementById("search").value.trim().toLowerCase();
-  const category = document.getElementById("categoryFilter").value;
-  const subteam = document.getElementById("subteamFilter").value;
 
-  // Remove all markers from map first
+  // MULTI-SELECT FILTER ARRAYS
+  const selectedCategories = getSelectedValues(
+    document.getElementById("categoryFilter")
+  );
+  const selectedSubteams = getSelectedValues(
+    document.getElementById("subteamFilter")
+  );
+
+  // Clear markers
   allMarkers.forEach((m) => m.remove());
   allMarkers = [];
 
@@ -135,12 +160,10 @@ function applyFilters() {
       ? [f["Subteam Tag"]]
       : [];
 
-    // ----- Filtering logic -----
+    // LOGIC BLOCK
     const searchMatch = recordMatchesSearch(rec, search);
-    const categoryMatch = category ? typeField === category : true;
-    const subteamMatch = subteam
-      ? subteamField.includes(subteam)
-      : true;
+    const categoryMatch = matchesOr(typeField, selectedCategories);
+    const subteamMatch = matchesAny(subteamField, selectedSubteams);
 
     if (searchMatch && categoryMatch && subteamMatch) {
       const marker = createMarker(rec);
@@ -159,7 +182,6 @@ function applyFilters() {
   buildLegend();
   applyFilters();
 
-  // Re-run filtering whenever dropdowns change
   document.getElementById("search").addEventListener("input", applyFilters);
   document.getElementById("categoryFilter").addEventListener("change", applyFilters);
   document.getElementById("subteamFilter").addEventListener("change", applyFilters);
