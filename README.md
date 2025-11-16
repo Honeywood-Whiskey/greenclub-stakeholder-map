@@ -147,12 +147,6 @@ https://greenclub-stakeholder-map.vercel.app/
 | Category                  | Folder                 |
 | ------------------------- | ---------------------- |
 | 🌍 Mission & Stakeholders | `docs/01-overview`     |
-| 📐 Architecture           | `docs/02-architecture` |
-| ⚙️ Technical Setup        | `docs/03-technical`    |
-| 🗺️ Data Model            | `docs/04-data-sources` |
-| 🎨 Map Features           | `docs/07-features`     |
-| 🚀 Roadmap                | `docs/10-roadmap`      |
-| 📕 Glossary               | `docs/00-glossary`     |
 
 
 ---
