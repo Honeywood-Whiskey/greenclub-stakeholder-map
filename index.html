@@ -104,8 +104,8 @@
     <div class="filter-row">
       <input id="search" type="text" placeholder="Search…" />
 
-      <select id="categoryFilter">
-        <option value="">All Categories</option>
+      <!-- MULTI-SELECT CATEGORY -->
+      <select id="categoryFilter" multiple size="6">
         <option>Compost Site</option>
         <option>Distributor</option>
         <option>Food Pantry</option>
@@ -122,8 +122,9 @@
 
     <!-- Subteam full width -->
     <div class="filter-row full">
-      <select id="subteamFilter">
-        <option value="">All Subteams</option>
+
+      <!-- MULTI-SELECT SUBTEAM -->
+      <select id="subteamFilter" multiple size="4">
         <option>Glimpse</option>
         <option>Echo</option>
         <option>Asphalt</option>
