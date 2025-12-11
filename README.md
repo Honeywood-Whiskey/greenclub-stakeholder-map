@@ -1,10 +1,10 @@
-# 🌱 GreenClub Stakeholder Map  
+# GreenClub Stakeholder Map  
 ### Cornell GreenClub | Sustainability | Community Mapping  
 Interactive, API-driven mapping of Ithaca & Cornell food-waste stakeholders.
 
 ---
 
-## 🏛️ Project Context  
+## Project Context  
 **Sustainability NME – FA 2025**  
 A centralized stakeholder CRM + interactive public outreach map to support Cornell GreenClub’s restaurant partnerships, composting initiatives, food-waste reduction projects, and community relationships.
 
@@ -12,7 +12,7 @@ This project links **data + design + environmental impact** into one living syst
 
 ---
 
-# 🧭 Overview  
+# Overview  
 The **GreenClub Stakeholder Map** connects Cornell’s sustainability ecosystem by integrating:
 
 - **Airtable** → structured CRM for all stakeholders  
@@ -27,11 +27,11 @@ This map powers:
 - nonprofit + municipal partner discovery  
 - long-term CRM continuity for future GreenClub teams  
 
-> 💡 **Goal:** a transparent, evolving map of Ithaca’s sustainability landscape — discoverable, filterable, and operationally useful.
+> **Goal:** a transparent, evolving map of Ithaca’s sustainability landscape — discoverable, filterable, and operationally useful.
 
 ---
 
-# 🧩 System Architecture  
+# System Architecture  
 **Airtable → Vercel Serverless Endpoint → GeoJSON → Mapbox Front-End**
 
 | Layer | Description | Technology |
@@ -42,14 +42,14 @@ This map powers:
 | **Deployment Layer** | CI/CD deploys frontend + backend together | Vercel |
 | **Documentation** | Governance, schema, workflows | `/docs` directory |
 
-### 🔐 Security  
+### Security  
 - Airtable API key moved **server-side only**  
 - No secrets in client-side JS  
 - Environment variables handled through Vercel + `.env.local`  
 
 ---
 
-# 🗂️ Repository Structure  
+#  Repository Structure  
 ```
 ├── api/ # Backend (Vercel serverless)
 │ └── get_data.js # Fetch + normalize Airtable → JSON
@@ -73,7 +73,7 @@ This map powers:
 
 ---
 
-# 🔍 Features  
+# Features  
 - Interactive Mapbox GL visualization  
 - Multi-select category filters  
 - **Global text search** across all Airtable fields  
@@ -85,7 +85,7 @@ This map powers:
 
 ---
 
-# 🧰 Developer Setup (Quickstart)
+# Developer Setup (Quickstart)
 
 ### **1. Clone the repository**
 ```bash
@@ -133,7 +133,7 @@ Your live map will be hosted at a URL like:
 https://greenclub-stakeholder-map.vercel.app/
 ```
 
-🛠️ Technology Stack
+Technology Stack
 | Layer                | Technology                            |
 | -------------------- | ------------------------------------- |
 | **Backend**          | Node.js serverless (Vercel Functions) |
@@ -143,21 +143,12 @@ https://greenclub-stakeholder-map.vercel.app/
 | **Deployment**       | Vercel CI/CD                          |
 | **Optional Scripts** | Python for scraping / data enrichment |
 
-📚 Documentation Index
+Documentation Index
 | Category                  | Folder                 |
 | ------------------------- | ---------------------- |
-| 🌍 Mission & Stakeholders | `docs/01-overview`     |
+| Mission & Stakeholders | `docs/01-overview`     |
 
 
 ---
-
-If you'd like, I can also provide:
-
-📸 A version with screenshot placeholders  
-🎨 Color palette version matching Honeywood & Whisky  
-🛠️ A `CONTRIBUTING.md` rewrite  
-📈 A visual architecture diagram  
-
-Just tell me!
 
 
